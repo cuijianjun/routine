@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+    <style>
+    .completed {
+        text-decoration: line-through;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="app">
+            <ul>
+                <li :class="{'completed':task.completed}" @click="toggleTasks(task)" v-for="task in tasks">{{task.body}}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        tasks: [{
+            body: 'go to movie',
+            completed: false
+        }, {
+            body: 'learn vue in action',
+            completed: true
+        }, {
+            body: 'go to movie',
+            completed: false
+        }]
+    },
+    methods: {
+        toggleTasks: function(task) {
+            task.completed = !task.completed;
+        }
+    }
+})
+</script>
+
+</html>

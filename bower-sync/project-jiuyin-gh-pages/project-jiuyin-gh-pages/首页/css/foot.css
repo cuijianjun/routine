@@ -1,0 +1,139 @@
+/*
+* @Author: cjj
+* @Date:   2016-08-29 22:51:03
+* @Last Modified by:   cjj
+* @Last Modified time: 2016-08-29 22:56:05
+*/
+#pub_footer {
+    width: 100%;
+    height: 425px;
+    background: #e8e8e8;
+    /*margin-top: 50px;*/
+}
+
+#pub_footer .pub_footer_cont {
+    width: 1000px;
+    height: 425px;
+    margin: 0 auto;
+}
+
+#pub_footer dl {
+    width: 130px;
+    height: 160px;
+    float: left;
+    border-left: 1px solid #d7d7d7;
+    margin-top: 35px;
+}
+
+#pub_footer dl.nav1 {
+    border-left: none;
+    margin-left: 80px;
+    display: inline;
+}
+
+#pub_footer dl.nav6 {
+    width: 180px;
+}
+
+#pub_footer dl dt {
+    width: 100%;
+    height: 26px;
+    float: left;
+    margin-bottom: 10px;
+    background: url(../image/icon.png) no-repeat;
+    text-indent: 52px;
+    overflow: hidden;
+    font: bold 16px/26px "";
+    color: #666;
+}
+
+#pub_footer .nav1 dt {
+    background-position: 20px 0;
+}
+
+#pub_footer .nav2 dt {
+    background-position: 20px -26px;
+}
+
+#pub_footer .nav3 dt {
+    background-position: 20px -52px;
+}
+
+#pub_footer .nav4 dt {
+    background-position: 20px -78px;
+}
+
+#pub_footer .nav5 dt {
+    background-position: 20px -104px;
+}
+
+#pub_footer .nav6 dt {
+    background-position: 20px -130px;
+}
+
+#pub_footer dl dd {
+    width: 100%;
+    height: 26px;
+    float: left;
+    font: normal 14px/26px "";
+    color: #666;
+    text-indent: 30px;
+}
+
+#pub_footer dl dd a {
+    color: #666;
+    text-decoration: none;
+}
+
+#pub_footer dl dd a:hover {
+    text-decoration: underline;
+}
+
+#pub_footer .copyright {
+    width: 100%;
+    height: 190px;
+    float: left;
+    border-top: 1px solid #d7d7d7;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#pub_footer .copyright h3 {
+    height: 30px;
+    font: normal 21px/30px "Simsun";
+    color: #999;
+    margin-top: 30px;
+}
+
+#pub_footer .copyright p {
+    font: normal 12px/30px Arial;
+    color: #999;
+}
+
+#pub_footer .copyright p a {
+    display: inline-block;
+    height: 45px;
+    background: url(../image/link.png) no-repeat;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#pub_footer .copyright p .a0 {
+    width: 108px;
+    background-position: 0 -135px;
+}
+
+#pub_footer .copyright p .a1 {
+    width: 108px;
+    background-position: 0 0;
+}
+
+#pub_footer .copyright p .a2 {
+    width: 120px;
+    background-position: 0 -45px;
+}
+
+#pub_footer .copyright p .a3 {
+    width: 120px;
+    background-position: 0 -90px;
+}

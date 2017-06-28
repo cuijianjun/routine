@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>js右下角广告</title>
+<style>
+	.rightAd{
+		width: 400px;
+		height: 300px;
+		background-color: #ccc;
+		position: fixed;//ie6+
+		bottom: 0;
+		right: 0;
+	}
+</style>
+</head>
+<body>
+	<div class="rightAd">
+		<div class="pic">
+			<a href="http://baidu.com"></a>
+			<video src="../http://baidu.comm"></video>	
+			<img src="http://usr.im/400x300">
+			<a href="javascript:void(0)"></a>
+		</div>
+	</div>
+</body>
+<script>
+	var aAd=document.getElementById('ad');
+	var oAdcon=document.getElementById('adcon');
+	var h=8;
+	var step=5;
+	var maxH=oAdcon.height;
+	function adDown(){
+		//aAd.style.height=h+'px';
+		if (h<maxH) {
+			h+=step;
+			aAd.style.height=h+'px';
+			setTimeout(adDown,1);
+		} else {
+			aAd.style.height=h+'px';
+			setTimeout(adUp,3000);
+		}
+	};
+	function adUp(){
+		if (h>0) {
+			h-=step;
+
+		} else {}
+	}
+
+	$(document).ready(function(){
+		$('#dbshow').click(function(){
+			$('#dbmove').animate({width:150}, 500,function(){
+				$('#dbhide').show();
+			})
+		});
+		$('#dbhide').animate({width:0}, 500,function(){
+			$('#dbmove').animate({width:0},500,function(){})
+		})
+	})
+</script>
+</html>

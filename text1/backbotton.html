@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var storage = null;
+    var back = {
+        backFunction: function(e) {
+            e.preventDefault();
+            var url = window.location.pathname.split("/");
+            url = url[url.length - 1]
+            storage.getJson("hash", function(data) {
+                //console.log(data.page[data.page.length-1].key);
+                //console.log(url);
+
+
+
+                    //mcpApp.finishActivity();
+
+                    console.log(data.page[data.page.length - 1].close)
+                    eval(data.page[data.page.length - 1].close);
+                    close();
+                    if(data.page[data.page.length - 1].key != "flow.html" && data.page[data.page.length - 1].key != "lossReturn.html") {
+                        var arr_back = [];
+                        var arr_prov = [];
+                        var arr_url = [];
+                        var index = 0;
+                        /*for(var i=0;i<data.page.length-1;i++){
+                         arr_back.push(data.page[i]);
+                         }*/
+                        //修改
+                        for(var i = 0; i < data.page.length ; i++) {
+                            arr_prov.push(data.page[i]);
+                            arr_url.push(data.page[i].key);
+
+                        }
+                        for(var j = 0; len = arr_url.indexOf(url), j <= len; j++) {
+                            arr_back.push(arr_prov[j]);
+                        }
+                        data.page = arr_back;
+                        console.log(data.page);
+                        storage.put("hash", data, function() {})
+                    }
+
+
+            })
+        },
+        stopBack: function(e) {
+            e.preventDefault();
+        }
+    }
+    document.addEventListener('deviceready', function(e) {
+        function backInit() {
+            storage = cordova.require("piccmobile-plugin.core.H5Storage");
+            var url = window.location.pathname.split("/");
+            url = url[url.length - 1]
+            storage.getJson("hash", function(data) {
+                console.log(data);
+                console.log(url);
+
+                //页面首次加载 data为空，且当前url==index.html
+                if(!data || data.page.length == 0) {
+                    var hash = {
+                        "page": []
+                    };
+                    var close = ""
+                    hash.page.push({
+                        "key": url,
+                        "close":
+  "function close(){" +
+  "window.plugins.toast.showShortBottom('再点击一次退出应用');" +
+  +"document.addEventListener('backbutton', mcpApp.finishActivity(), false); "
++"document.removeEventListener('backbutton', eventBackButton, false);"
++"var intervalID = window.setInterval(function() {"
+  +"window.clearInterval(intervalID);"
+  +"document.removeEventListener('backbutton', mcpApp.finishActivity, false);"
+  +"document.addEventListener('backbutton', eventBackButton, false);"
+  +"}, 3000);"
+
+ ,
+                        "type": 0
+                    });
+                    storage.put("hash", hash, function() {})
+                    //二级页面处理
+                } else if(url == "flow.html" || url == "lossReturn.html") {
+                    console.log(data.page);
+                    storage.getJson("hash", function(data) {
+                        if(data.page[data.page.length - 1].key != url) {
+                            var arrpro_url = [];
+                            var arrpro = ["flow.html", "lossReturn.html"];
+                            var index = [];
+                            var Min;
+                            for(var i = 0; i < data.page.length; i++) {
+                                arrpro_url.push(data.page[i].key);
+                            }
+                            for(var j = 0; j < arrpro.length; j++) {
+                                temp = arrpro_url.indexOf(arrpro[j]);
+                                if(temp > 0) {
+                                    index.push(temp);
+                                }
+                            }
+                            Min = Math.min.apply([], index);
+                            data.page.splice(Min);
+                            data.page.push({
+                                "key": url,
+//						"close": "function close(){window.plugins.toast.showShortBottom('再点击返回首页 , 确认要离开吗');setTimeout(function(){backInit();},3000)}",
+                                "close": "function close(){$('.public-hd .finishActivityForTaskList').trigger('click')}",
+                                "type": 1
+                            });
+                            storage.put("hash", data, function() {})
+                        }
+                    })
+                    //三级页面处理 --定损
+                } else if(top.location == self.location && (url == "checking.html" || url == "assessment.html" || url == "taskProcessing.html")) {
+                    storage.getJson("hash", function(data) {
+                        console.log(url);
+                        console.log(data)
+                        var arrpro_url = [];
+                        var arrpro = ["checking.html", "assessment.html", "taskProcessing.html"];
+                        var index = [];
+                        var Min;
+                        /*data.page.push({
+                         "key": url,
+                         "close":"function close(){$('.alink').trigger('click')}",
+                         "type": 1
+                         });	*/
+                        for(var i = 0; i < data.page.length; i++) {
+                            arrpro_url.push(data.page[i].key);
+                        }
+                        for(var j = 0; j < arrpro.length; j++) {
+                            temp = arrpro_url.indexOf(arrpro[j]);
+                            if(temp > 0) {
+                                index.push(temp);
+                            }
+                        }
+                        Min = Math.min.apply([], index);
+                        data.page.splice(Min);
+                        data.page.push({
+                            "key": url,
+                            "close": "function close(){$('.alink').trigger('click')}",
+                            "type": 2
+                        });
+                        /*index=arrpro_url.indexOf(url);
+                         if(index>0){
+                         data.page.splice(0,index+1)
+                         }
+                         */
+                        storage.put("hash", data, function() {})
+
+                        /*if(data.page[data.page.length - 1].key!= url) {
+                         data.page.push({
+                         "key": url,
+                         "close":"function close(){$('.alink').trigger('click')}",
+                         "type": 1
+                         });
+                         storage.put("hash", data, function() {})
+                         }*/
+                    })
+                } else {
+                    //其他页面情况处理--留言板。。。
+
+                    //首页进行二次跳转的处理
+                    //				var aaa = 0;
+                    storage.getJson("hash", function(data) {
+                        if(url == "index.html") {
+                            data.page.splice(0);
+                            console.log(data.page);
+                            data.page.push({
+                                "key": url,
+                                "close": "function close(){window.plugins.toast.showShortBottom('再点击一次退出应用');setTimeout(function(){backInit();},3000)}",
+                                "type": 3
+                            });
+                        } else if(data.page[data.page.length - 1].key != url) {
+                            data.page.push({
+                                "key": url,
+                                "close": "function close(){history.back(-1);}",
+                                "type": 4
+                            });
+                        }
+                        console.log(data);
+                        storage.put("hash", data, function() {});
+                    })
+                }
+
+            })
+
+        }
+        backInit();
+        document.addEventListener('backbutton', back.backFunction, false);
+    });
+</script>
+</body>
+</html>

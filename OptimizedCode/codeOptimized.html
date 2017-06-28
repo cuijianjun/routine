@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*var myObject = {
+            name: '@tips_js'
+       };
+       console.log(myObject.hasOwnProperty('name'));
+      console.log('name' in myObject);*/
+//测试性能
+    /*console.time("Array initialize");
+     var arr = new Array(1000000),
+                len = arr.length,
+                 i;
+     /!*for (i = 0; i < len; i++) {
+             arr[i] = new Object();
+     };*!/
+
+    arr.map(function(val, index, array) {
+        array[index] = new Object();
+    });
+
+     console.timeEnd("Array initialize"); // 0.711ms*/
+
+
+  /*  var arr = [5,3,2,9,1];
+      var arrFunc = arr.map(function(x) {
+            return x * x;
+          });
+      console.log(arrFunc)*/
+   /* function returnInt(element){
+        return parseInt(element,10);
+    }
+
+    var a=["1", "2", "3"].map(returnInt);
+    console.log(a);
+    // 返回[1,2,3]*/
+
+
+   /* var arr = [5,3,2,9,1];
+    var arrFunc = arr.map((x) => x*x);
+    console.log(arrFunc )*/
+
+
+    /* var someText = 'text';
+     !!~someText.indexOf('tex'); // someText contains "tex" - true
+     !~someText.indexOf('tex'); // someText NOT contains "tex" - false
+     ~someText.indexOf('asd'); // someText doesn't contain "asd" - false
+     ~someText.indexOf('ext'); // someText contains "ext" - true*/
+//数组去重，并按首字母排序
+   /* var keyword = ['do', 'if', 'in', 'for', 'new', 'try', 'var', 'case', 'else', 'enum', 'null', 'this', 'true', 'void', 'with', 'break', 'catch', 'class', 'const', 'false', 'super', 'throw', 'while', 'delete', 'export', 'import', 'return', 'switch', 'typeof', 'default', 'extends', 'finally', 'continue', 'debugger', 'function', 'do', 'if', 'in', 'for', 'int', 'new', 'try', 'var', 'byte', 'case', 'char', 'else', 'enum', 'goto', 'long', 'null', 'this', 'true', 'void', 'with', 'break', 'catch', 'class', 'const', 'false', 'final', 'float', 'short', 'super', 'throw', 'while', 'delete', 'double', 'export', 'import', 'native', 'public', 'return', 'static', 'switch', 'throws', 'typeof', 'boolean', 'default', 'extends', 'finally', 'package', 'private', 'abstract', 'continue', 'debugger', 'function', 'volatile', 'interface', 'protected', 'transient', 'implements', 'instanceof', 'synchronized', 'do', 'if', 'in', 'for', 'let', 'new', 'try', 'var', 'case', 'else', 'enum', 'eval', 'null', 'this', 'true', 'void', 'with', 'break', 'catch', 'class', 'const', 'false', 'super', 'throw', 'while', 'yield', 'delete', 'export', 'import', 'public', 'return', 'static', 'switch', 'typeof', 'default', 'extends', 'finally', 'package', 'private', 'continue', 'debugger', 'function', 'arguments', 'interface', 'protected', 'implements', 'instanceof', 'do', 'if', 'in', 'for', 'let', 'new', 'try', 'var', 'case', 'else', 'enum', 'eval', 'null', 'this', 'true', 'void', 'with', 'await', 'break', 'catch', 'class', 'const', 'false', 'super', 'throw', 'while', 'yield', 'delete', 'export', 'import', 'public', 'return', 'static', 'switch', 'typeof', 'default', 'extends', 'finally', 'package', 'private', 'continue', 'debugger', 'function', 'arguments', 'interface', 'protected', 'implements', 'instanceof'];
+    var keywords=[1,2,3,4,5,1,2,6];
+    var filteredAndSortedKeywords = keyword.filter(function (keyword, index) {
+               return keywords.indexOf(keyword) === index;
+             }).sort(function (a, b) {
+               return a < b ? -1 : 1;
+             });
+    console.log(filteredAndSortedKeywords);*/
+
+
+/*for (var i=0; i<5; i++) {
+    setTimeout(function(){
+        console.log(i);
+    }, 1000)};*/
+
+/*for (var i=0; i<5; i++) {
+
+(function(num){
+setTimeout(function(){
+console.log(num);
+}, 3000);
+})(i);
+
+}
+
+for(var i=0;i<5;i++){
+(function(num){
+console.log(num);
+})(i)
+}*/
+
+ /*   function fn1(){
+        var i = 10;
+        function fn2(){
+            console.log(i++);
+        }
+        return fn2; //返回fn2函数首地址
+    }
+    var test=fn1(); //test也指向了fn2函数的首地址
+    test();
+    //test();
+    //test();*/
+
+ //ES6字符串拼接
+  /*  var user={
+        name:"ggfhghfhg",
+        action:"22"
+    }*/
+    /*var a= (`
+  <h1>小心！>/h1>
+  <p>未经授权打冰球可能受罚
+  将近${user.action}分钟。</p>
+`);*/
+/*var a=SaferHTML`<p>${user.name} 向你示好。</p>`;
+ var message = SaferHTML(templateData, bonk.sender);
+    console.log(a,message);*/
+
+    //map取代for循环
+
+   /* var arr1 = new Array(100);
+    var arr = ['val1', 'val2', 'val3','val3','val3','val3','val3','val3'];
+    console.time("Array initialize");
+    for(var i = 0; i < arr.length; i++){
+        console.log(arr[i],i,arr);
+    }
+
+  /!*  arr1.map(function(val, index, array) {
+        console.log(val,index,array);
+    });*!/
+    console.timeEnd("Array initialize");*/
+    var a=[1,2,3,4,5,6,7,4,3,2];
+    var obj={
+        a:1,
+        b:2
+    }
+    /*for(var value of obj){
+        console.log(value);
+    }*/
+    var uniqueWords = new Set(obj);
+    for (var word of uniqueWords) {
+        console.log(word);
+    }
+</script>
+</html>

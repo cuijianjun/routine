@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+</head>
+<body>
+    <component :is="currentView"></component>
+
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+    Vue.component('c1',{
+        template:
+        '<div class="c1">'
+        +'<input v-model="a">{{a}}'
+        +'<button @click="m('home')">home</button>'
+        +'<button @click="m('posts')">posts</button>'
+        +'<button @click="m('archive')">archive</button>'
+        +'<button @click="m('str1')">{{str1}}</button>'
+        +'</div>',
+        props:['str1'],
+        methods:{
+            m:function(str1){
+                this.$dispatch('parent-events1',str1)
+            }
+        },
+        data:function(){
+            return  {
+                a:1
+            }
+        }
+    });
+
+    new Vue({
+        el:'body',
+        data:{
+            currentView:'home'
+        },
+        components:{
+            home:{
+                template:'component is home <c1 str1="home"></c1>>'
+            },
+            posts:{
+                template:'component is posts <c1 str1="posts"></c1>>'
+            },
+            archive:{
+                template:'component is archive <c1 str1="archive"></c1>>'
+            }
+        },
+        events:{
+            'parent-events1':function(str1){
+                this.currentView=str1;
+            }
+        }
+    })
+</script>
+</html>

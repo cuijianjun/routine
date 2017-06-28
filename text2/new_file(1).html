@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<ul id="test">
+
+		</ul>
+		<button>addlist</button>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script>
+		//初始化假数据
+		var initData = [{
+			id: 1,
+			text: 'item1'
+		}, {
+			id: 2,
+			text: 'item2'
+		}, {
+			id: 3,
+			text: 'item3'
+		}];
+
+		//添加数据
+		var addOne = function(item) {
+			$('<li id="' + item.id + '">' + item.text + '</li>').appendTo('#test').click(clickEvent);
+		};
+		
+		//点击事件
+		var clickEvent = function() {
+			var id = $(this).attr('id');
+			alert('id:' + id);
+		};
+		
+		//遍历初始化假数据
+		$.each(initData, function(index, item) {
+			addOne(item);
+		});
+
+		$('button').click(function() {
+			//制造单条假数据
+			var mokeId = parseInt(Math.random() * 1000)
+			var item = {
+				id: mokeId,
+				text: 'item' + mokeId
+			}
+			addOne(item);
+		});
+	</script>
+
+</html>

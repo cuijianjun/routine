@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+    <style>
+        .fade-transition{
+            -webkit-transition: opacity .3s ease;
+            -moz-transition: opacity .3s ease;
+            -ms-transition: opacity .3s ease;
+            -o-transition: opacity .3s ease;
+            transition: opacity .3s ease;
+        }
+        .fade-enter,
+        .fade-leave{
+            opacity: 0;
+        }
+        .box{
+            width: 250px;
+            border: 1px solid #9325bc;
+            padding: 10px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .box:hover{
+            box-shadow: 0 0 10px #ccc;
+            border: 10px solid #9325bc;
+        }
+    </style>
+</head>
+<body>
+    <h3>可重复用的组件</h3>
+    <div id="app">
+        <template :foo="baz" :bar="qux" @click="dothis('click')" @onmouseover="onMouseOver('mouseover')">
+            <img slot="icon" src="http://cn.vuejs.org/images/logo.png" width="200" >
+            <p slot="main-text">Hello!</p>
+        </template>
+
+        <template :foo="baz" :bar="qux" @click="dothis('台湾小贩')" @onmouseover="onMouseOver('喜欢vue.js')">
+            <img src="http://cn.vuejs.org/images/logo.png" width="200" slot="icon">
+            <p slot="main-text">Hello!</p>
+        </template>
+
+        <template :foo="baz" :bar="qux" @click="dothis('感谢Vue群')" @onmouseover="onMouseOver('Vue.js 2365236522')">
+            <img src="http://cn.vuejs.org/images/logo.png" width="200" slot="icon">
+            <p slot="main-text">Hello!</p>
+        </template>
+    </div>
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+    Vue.component('template',{
+        template:
+        '<div class="box" >' +
+        '<slot name="icon"></slot>' +
+        '<slot name="main-text"></slot>' +
+        '</div>',
+        props:['foo','bar'],
+        data:function(){
+            return {
+                items:{
+                    a:'1',
+                    b:'2',
+                    c:'3',
+                }
+            }
+        }
+    })
+
+
+    new  Vue({
+        el:'#app',
+        data:{
+            items:{
+                'a':'4',
+                'b':'5',
+                'c':'6',
+            }
+        },
+        methods:{
+            'dothis':function(msg){
+                console.log(msg);
+            },
+            'onMouseOver':function(msg){
+                console.log(msg);
+            }
+        }
+    });
+</script>
+</html>

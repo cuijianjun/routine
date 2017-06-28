@@ -1,0 +1,177 @@
+.wrapper img{
+    width: 100%;
+
+
+}
+.content {
+    margin: 0 auto;
+    padding-top: 98px;
+    width: 960px;
+    height: 842px;
+
+}
+.wrapper{
+    width: 100%;
+    background: url("../image/cjjBgImg.jpg") no-repeat  top center;
+}
+.registerBox {
+    width: 550px;
+    height: 620px;
+    border: 2px solid #ececec;
+    border-top: 0 none;
+    background: #fff;
+}
+.registered {
+    border-top: 1px solid #f6e190;
+    border-bottom: 1px solid #f6e190;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #727272;
+    background: #fffae2;
+}
+.toLogin {
+    display: inline-block;
+    margin-left: .5em;
+    color: #000;
+    text-decoration: underline;
+}
+.label,
+.collection,
+.icon {
+    float: left;
+}
+.row {
+    padding: 8px 0;
+    height: 35px;
+    line-height: 35px;
+
+}
+.label {
+    width: 7em;
+    font-size: 14px;
+    text-align: right;
+}
+.collection {
+    position: relative;
+    width: 313px;
+    height: inherit;
+
+}
+/*.inputDefault,
+.inputWrite {
+    border: 1px solid #333;
+    color: #000;
+}*/
+/*.inputComplete {
+    border: 1px solid blue;
+}*/
+.inputDefault,
+.inputWrite,
+.inputComplete,
+.msgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px 6px;
+    width: 298px;
+    font-size: 13px;
+    height: 1.1em;
+    line-height: 1.1em;
+}
+.msgContainer {
+    border: 1px solid #808080;
+    border-color: #808080 #bfbfbf #bfbfbf #808080;
+    color: #999;
+    cursor: text;
+}
+#selfhoodForm input,
+#mobileRegForm input,
+#loginForm input {
+    vertical-align: middle;
+}
+
+
+#mobileRegForm,
+#selfhoodForm {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 454px;
+}
+
+/*验证码*/
+#captchaDiv{
+    width: 114px;
+    margin-right: 10px;
+}
+#captchaDiv input.msgContainer,
+#captcha{
+    width: 100px;
+}
+.captchaimg{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+ .changeImg{
+    cursor: pointer;
+}
+
+/*lable*/
+.send,
+.agree {
+    padding-left: 99px;
+}
+.agree a,
+.agree {
+    color: #ccc;
+}
+.agree a {
+    text-decoration: underline;
+}
+.send input {
+    width: 178px;
+    height: 52px;
+    border: 0 none;
+    background-position: 0 -33px;
+
+    cursor: pointer;
+    _cursor: hand;
+}
+.send input:hover {
+    background-position: 0 -85px;
+}
+.send .disabledSubmit:hover,
+.send .disabledSubmit {
+    background-position: 0 -137px;
+    cursor: default;
+}
+/*红色错号提醒*/
+.iconCorrect,
+.iconError {
+    margin: 0;
+    width: 40px;
+    height: 33px;
+}
+.iconError {
+    background-position: -15px 0;
+}
+.send input,
+.iconCorrect,
+.iconError,
+.recommend {
+    background-image: url("../image/register.gif");
+}
+.collection .msgError {
+    border: 1px solid red;
+    color: red;
+}
+.msgHover,
+.msgDefault:hover {
+    border: 1px solid #999;
+    color: #333;
+}
+ .msgError1 {
+    border: 1px solid limegreen;
+    color: #333;
+}

@@ -1,0 +1,368 @@
+﻿.xt-top {
+    width: 100%;
+    height: 2000px;
+    background: url("../lv-images/bg.jpg") no-repeat ;
+    background-color: #F0F0F0;
+    position: relative;
+}
+.viodou {
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    top:380px;
+    left: 565px;
+}
+.logo {
+    width: 430px;
+    height: 220px;
+    top:50px;
+    left: 500px;
+    position: absolute;
+}
+.xt-min {
+    height: 66px;
+    background:url("../lv-images/nav-bac.png");
+    opacity: 0.8;
+}
+.xt-min .xt-nav {
+    height: 66px;
+}
+.xt-min .xt-nav ul {
+    padding-left: 280px;
+}
+.xt-min .xt-nav li {
+    margin-right: 50px;
+    margin-top: 35px;
+    float: left;
+}
+.xt-min .xt-nav  a{
+    font-size: 15px;
+    color: #010101;
+    font-family:  'WenQuanYi Micro Hei';
+    font-weight: 900;
+}
+.xt-min .xt-nav  a:hover{
+    color: red;
+}
+.xt-min .xt-nav-u {
+    height: 160px;
+    width: 100%;
+    float: left;
+    display: none;
+    padding-left: 285px;
+    background-color: #DCE7EB;
+    opacity: 1;
+}
+.xt-min .xt-nav-u ul {
+    margin-top: 20px;
+    float: left;
+    margin-right: 62px;
+    line-height: 20px;
+    text-align: center;
+}
+.xt-min .xt-nav-u ul a{
+    color: black;
+}
+.xt-center {
+    height: 440px;
+    margin-top: 570px;
+}
+.xt-center .xt-center-l {
+    float: left;
+    height: 440px;
+    width: 200px;
+    overflow: hidden;
+}
+.xt-center .xt-center-l .xt-center-l-t {
+    width: 200px;
+    height: 180px;
+}
+.xt-center .xt-center-l .xt-center-l-t a {
+    float: left;
+}
+.xt-center .xt-center-l .xt-center-l-t .to {
+     width: 100px;
+     height: 40px;
+     display: block;
+     background: url("../lv-images/nav-bada.png") no-repeat;
+ }
+.xt-center .xt-center-l .xt-center-l-t .tt {
+    width: 100px;
+    height: 40px;
+    display: block;
+    background: url("../lv-images/nav-bada.png") no-repeat -100px 0px;
+}
+.xt-center .xt-center-l .xt-center-l-t .ts {
+    width: 100px;
+    height: 40px;
+    display: block;
+    background: url("../lv-images/nav-bada.png") no-repeat 0px -40px;
+}
+.xt-center .xt-center-l .xt-center-l-t .tf {
+    width: 100px;
+    height: 40px;
+    display: block;
+    background: url("../lv-images/nav-bada.png") no-repeat -100px -40px;
+}
+.xt-center .xt-center-l .xt-center-l-b {
+    height: 280px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFDFF;
+}
+.xt-center .xt-center-l .xt-center-l-b span {
+     height: 35px;
+     display: block;
+ }
+.xt-center .xt-center-l .xt-center-l-b span a {
+    position: absolute;
+    font-family: "微软雅黑";
+    right: 15px;
+    top:15px;
+}
+.xt-center .xt-center-l .xt-center-l-b h3 {
+    position: absolute;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    left: 15px;
+    top:15px;
+}
+.xt-center .xt-center-l .xt-center-l-b a {
+    float: right;
+}
+.xt-center .xt-center-l .xt-center-l-b .xt-center-l-b-lb {
+    height: 240px;
+    overflow: hidden;
+}
+.xt-center .xt-center-l .xt-center-l-b .xt-center-l-b-lb ul {
+    width: 1200px;
+    height: 240px;
+    position: absolute;
+}
+.xt-center .xt-center-l .xt-center-l-b .xt-center-l-b-lb ul li {
+    float: left;
+}
+.xt-center .xt-center-l .xt-center-l-b  .xt-center-l-b-lb-all span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.xt-center .xt-center-l .xt-center-l-b-lb-all #xt-center-left {
+    left: 10px;
+    top:130px;
+
+}
+.xt-center .xt-center-l .xt-center-l-b-lb-all #xt-center-right {
+    right: 10px;
+    top:130px;
+}
+.xt-center-c {
+    width: 430px;
+    height: 440px;
+    margin-left: 28px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.xt-center-c ul {
+    width: 3000px;
+    position: absolute;
+}
+.xt-center-c ul li {
+    float: left;
+}
+.xt-center-c ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    left: 30%;
+    line-height: 20px;
+    text-align: center;
+}
+.xt-center-c ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.xt-center-c ol li.current {
+    background: yellow;
+}
+.xt-center-c #arr {
+    display: none;
+}
+
+.xt-center-c #arr span {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+.xt-center-c #arr #right {
+    right: 5px;
+    left: auto;
+}
+.xt-center-b {
+    width: 430px;
+    height: 440px;
+    margin-left: 28px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.xt-center-b-top {
+    height: 320px;
+    background-color: white;
+}
+.xt-center-b-top-top ul {
+    width: 385px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    border-bottom: 1px solid #E4E7E8;
+}
+.xt-center-b-top-top ul li{
+      float: left;
+      width: 55px;
+    text-align: center;
+  }
+.xt-center-b-top-top ul li a{
+    font-size: 16px;
+    color: #93897F;
+    height: 50px;
+    font-family: "微软雅黑";
+}
+.xt-center-b-top-top ul  .xz{
+    display: block;
+    border-bottom:1px solid #5E5572;
+
+}
+.xt-center-b-top-top ul  .xz a {
+    font-size: 18px;
+    color: #5E5572;
+}
+.xt-center-b-top-bot p {
+    height: 66px;
+    width: 430px;
+    line-height: 66px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    color: #64587F;
+    font-size: 18px;
+    font-weight: 900;
+}
+.xt-center-b-top-bot .navAll {
+    height: 200px;
+    margin-top: 5px;
+    
+}
+.xt-center-b-top-bot .navAll .disB {
+    display: block;
+}
+.xt-center-b-top-bot .navAll div {
+    display: none;
+}
+.xt-center-b-top-bot .navAll ul {
+    margin-left: 25px;
+    line-height: 30px;
+
+}
+.xt-center-b-top-bot .navAll a {
+    color: #666666;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.xt-center-b-top-bot .navAll a:hover {
+    color: red;
+}
+.xt-center-b-top-bot .navAll span {
+    float: right;
+    margin-right: 10px;
+}
+.xt-center-b-bot {
+    height: 100px;
+    margin-top: 20px;
+
+}
+.xt-center-b-bot .xt-center-b-bot-l{
+    float: left;
+}
+.xt-center-b-bot .xt-center-b-bot-r {
+    float: right;
+}
+.xt-center-r {
+    width: 200px;
+    height: 440px;
+    float: right;
+}
+.xt-center-r-top {
+    height: 180px;
+}
+.xt-center-r-bot{
+    height: 240px;
+    margin-top: 20px;
+    background-color: white;
+}
+.xt-center-r-bot li {
+    width: 100px;
+    height: 80px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+
+}
+.xt-center-r-bot li p {
+    display: block;
+    color: #E1C889;
+    margin-top: 60px;
+}
+.xt-center-r-bot .li-y {
+    background: url("../lv-images/ad-wn-1.bmp") no-repeat ;
+
+}
+.xt-center-r-bot .li-e {
+    background: url("../lv-images/ad-jy-1.bmp") no-repeat;
+
+}
+.xt-center-r-bot .li-s {
+    background: url("../lv-images/ad-wh-1.bmp") no-repeat ;
+
+}
+.xt-center-r-bot .li-f {
+    background: url("../lv-images/ad-wb-1.bmp") no-repeat;
+
+}
+.xt-center-r-bot .li-w {
+    background: url("../lv-images/ad-tb-1.bmp") no-repeat ;
+
+}
+.xt-center-r-bot .li-l {
+    background: url("../lv-images/ad-wx-1.bmp") no-repeat;
+
+}
+

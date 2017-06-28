@@ -1,0 +1,261 @@
+
+    /*CSS初始化*/
+/*body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,span{
+    font-size: 12px;
+    font-family: 宋体;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    color: #B61D1D;
+}
+input,img{
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+}
+i,s{
+    font-style: normal;
+    text-decoration: none;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+
+.w{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.public-color{
+    color: #B61D1D;
+}*/
+/*上方弹琴图*/
+.yn-topic{
+    height: 933px;
+    background: url("../right_images/guide-bg4.jpg") no-repeat center top;
+    /*position: relative;*/
+}
+.yn-topic .top-81{
+    font-size: 40px;
+    margin-left: 493px;
+    padding-top: 7px;
+    font-family: 微软雅黑;
+    color: #E72E00;
+}
+.yn-topic .min-logo{
+    margin-left: 190px;
+    margin-top: 55px;
+}
+.yn-topic .three-link{
+    margin-top: 435px;
+    margin-left: 155px;
+}
+
+.yn-topic .mini-move{
+    position: absolute;
+    top: 500px;
+    left: 240px;
+}
+.yn-topic .mini-move .play-0{
+    height: 91px;
+    width: 91px;
+    background: url("../right_images/rotate1.png");
+    position: absolute;
+    top: 60px;
+    left: 135px;
+    /*transform: rotate(180deg);*/
+    -webkit-animation:circle 1s infinite linear;/*匀速 循环*/
+
+}
+    @-webkit-keyframes circle{
+        0%{ transform:rotate(0deg); }
+        100%{ transform:rotate(-360deg); }
+    }
+.yn-topic .mini-move .play-1{
+    height: 91px;
+    width: 91px;
+    background: url("../right_images/rotate2.png");
+    position: absolute;
+    top: 60px;
+    left: 135px;
+}
+
+.yn-topic .fl-sign{
+    height: 575px;
+    width: 300px;
+    position: fixed;
+    right: 10px;
+    top: 55px;
+    background-color: #F2F2F2;
+    z-index: 99;
+}
+.yn-topic .fl-sign .sign-mini{
+    position: fixed;
+    right: -40px;
+}
+.yn-topic .fl-sign .sign-hand{
+    background:url("../right_images/reg-top.png") no-repeat;
+    height: 60px;
+    background-color: #333333;
+}
+.yn-topic .fl-sign .sign-hand a{
+    display: inline-block;
+    position: absolute;
+    right: 23px;
+    top: 23px;
+}
+
+.yn-topic .fl-sign .sgbd-con{
+    height: 300px;
+    background-color: #F2F2F2;
+    padding-left: 20px;
+    padding-top: 17px;
+
+}
+.yn-topic .fl-sign .sgbd-con input{
+    padding-left: 4px;
+
+}
+.yn-topic .fl-sign .sgbd-con label{
+    font-family: 微软雅黑;
+    color: #333333;
+}
+.yn-topic .fl-sign .sgbd-con .sgbd-text{
+    height: 28px;
+    width: 190px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    margin-top: 7px;
+    margin-left: 13px;
+}
+.fl-sign .sgbd-con .yzm{
+    height: 28px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    margin-top: 7px;
+    margin-left: 13px;
+    width: 72px;
+}
+
+.fl-sign .sgbd-con .sgbd-img{
+    vertical-align: middle;
+}
+.fl-sign .sgbd-con .check-box{
+    /*margin-top: 2px;*/
+    vertical-align: bottom;
+}
+
+.sign-body .sgbd-finish{
+    height: 116px;
+    width: 230px;
+    margin: 0 auto;
+}
+.sign-body .sgbd-finish .top{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.sign-body .sgbd-finish .right{
+    margin-left: 4px;
+}
+.sign-body .sgbd-finish .sign-footer{
+    line-height: 23px;
+    color: #333333;
+}
+
+/*中间翻牌子*/
+    /**{margin:0;padding:0;list-style-type:none;}*/
+    /*a,img{border:0;text-decoration:none;}*/
+
+
+
+    /*body{font:12px/180% Arial;background:#333;}*/
+
+    .bjimg-box{
+        width: 100%;
+        height: 900px;
+    }
+
+    .bjimg{
+        min-width: 1200px;
+        height: 750px;
+        position: relative;
+        padding-top: 127px;
+        background: url("../right_images/guide-bg2.jpg") no-repeat center;
+
+
+    }
+
+    .bjimg-box .zhuce{
+        position: fixed;
+        right: 0;
+        top:50px;
+    }
+    .brand{
+        width: 1200px;
+        height: 500px;
+        margin-left:110px;
+        margin-top: 50px;
+    }
+    .brand a{
+        display: block;
+        float: left;
+        margin-left: 20px;
+        width: 200px;
+        height: 380px;
+        /*text-align: center;*/
+        position: relative;
+    }
+
+    .brand img{
+        width: 200px;
+        height: 380px;
+    }
+    .brand .info{
+        display: none;
+        width: 200px;
+        height: 380px;
+
+
+    }
+    .brand .info1{
+        background-image: url("../right_images/card1-back.png");
+    }
+    .brand .info2{
+        background-image: url("../right_images/card2-back.png");
+    }
+    .brand .info3{
+        background-image: url("../right_images/card3-back.png");
+    }
+    .brand .info4{
+        background-image: url("../right_images/card4-back.png");
+    }
+    .brand .info5{
+        background-image: url("../right_images/card5-back.png");
+    }
+    .brand .a1{
+        margin-top: 47px;
+    }
+    .brand .a4{
+        margin-top: 47px;
+    }
+    .vertical .info{
+        width: 200px;
+        height: 380px;
+        margin: 0 auto;
+    }

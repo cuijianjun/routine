@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">
+            form
+        </h1>
+        <div id="app">
+                <button type="button" class="btn btn-warning" @click="updateCount">Submit{{count}}</button>
+        </div>
+    </div>
+
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            count:0
+        },
+        methods:{
+            updateCount:function(){
+                this.count+=1;
+            }
+        }
+    })
+</script>
+</html>

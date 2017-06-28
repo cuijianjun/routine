@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>获取输入框的值</title>
+    <script type="text/javascript">
+        window.onload=function(){
+
+            var btt=document.getElementById("bt1");
+
+            btt.onblur=function(){
+                alert(bt1.value);
+            }
+
+            url="4556.html/?name="+bt1.value;
+        }
+
+
+    </script>
+</head>
+<body>
+请输入内容<input type="text" id="bt1" />
+
+<a href=url>跳转4556</a>
+</body>
+</html>

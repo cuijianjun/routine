@@ -1,0 +1,1 @@
+var total = values.reduce((a, b) => a + b, 0);

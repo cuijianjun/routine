@@ -1,0 +1,285 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+    margin:0;
+    padding:0;
+    font:14px 宋体;
+    list-style:none;
+    color:#666;
+}
+
+input,img{
+    border:0 none;
+    outline-style:none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    color:#666;
+    text-decoration: none;
+}
+
+.clearfix:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+/*.box{*/
+    /*margin:0 auto;*/
+    /*width: px;*/
+/*}*/
+.zll-bg .erweima{
+    position: fixed;
+    width: 100px;
+    right: 135px;
+    top: 35%;
+    z-index: 22;
+    display: none;
+}
+
+.zll_top{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+}
+
+.zll_top .topnav{
+    height: 114px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:20;
+    opacity: 0.6;
+}
+.zll_top .logo {
+    float: left;
+}
+.zll_top ul{
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    right: 200px;
+    width: 500px;
+    height: 114px;
+}
+.zll_top ul a{
+    width: 110px;
+    height: 70px;
+    float: left;
+    margin-top: 40px;
+    text-align: center;
+    font: 14px/1.5 微软雅黑;
+    color: #fff;
+    text-align: center;
+    opacity: 0.6;
+}
+.zll_top ul a:hover{
+    opacity: 1;
+}
+.zll_top .navicon{
+    position: absolute;
+    z-index: 21;
+    width: 245px;
+    height: 114px;
+    right: 10px;
+}
+.zll_top .navicon span{
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 15px;
+    background: url("../phone_images/m_sns.png") no-repeat;
+    opacity: 0.6;
+}
+.zll_top .navicon span:hover{
+    opacity: 1;
+}
+.zll_top .navicon .icon1{
+     background-position: 0 0;
+ }
+.zll_top .navicon .icon2{
+    background-position: -43px 0;
+}
+.zll_top .navicon .icon3{
+    background-position: -86px 0;
+}
+.zll_top .navicon .icon4{
+    background-position: -129px 0;
+}
+.zll_box0{
+    position: fixed;
+    top: 0px;
+    background: url("../phone_images/bg1.jpg") top center no-repeat;
+    width: 100%;
+    height: 1050px;
+}
+.zll_box1{
+    width: 100%;
+    height: 1050px;
+    position: relative;
+}
+.zll_box1 .slogen{
+    width: 574px;
+    height: 252px;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+}
+.zll_box1 .gumu{
+    width: 490px;
+    height: 400px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    opacity: 0.8;
+}
+.zll_box1 .note{
+    width: 630px;
+    height: 192px;
+    position: absolute;
+    right: 10px;
+    bottom: 150px;
+    opacity: 0.8;
+}
+.zll_box2{
+    width: 100%;
+    height: 1050px;
+    position: relative;
+    overflow: hidden;
+}
+.zll_box2 ul{
+    width: 12000px;
+    position: relative;
+}
+.zll_box2 .bg li{
+    width: 1821px;
+    float: left;
+    height: 1050px;
+    margin-left: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.zll_box2 .bg li h1{
+    position: absolute;
+    font:600 70px 微软雅黑;
+    color:#ffffff;
+    width: 600px;
+    height: 200px;
+    left: 600px;
+    bottom: 200px;
+}
+.zll_box2 .phone{
+    background: url("../phone_images/phone.png") no-repeat;
+    position: absolute;
+    width: 710px;
+    height: 348px;
+    top: 230px;
+    left: 50%;
+    margin-left: -355px;
+}
+.zll_box2 .phone .screen{
+    position: absolute;
+    width: 535px;
+    height: 300px;
+    background: #ccc;
+    top: 22px;
+    left: 87px;
+    overflow: hidden;
+}
+.zll_box2 .screen ul{
+    width: 3000px;
+    height: 300px;
+    position: relative;
+}
+.zll_box2 .screen li{
+    width: 535px;
+    height: 300px;
+    float: left;
+}
+#right{
+    width: 70px;
+    height: 70px;
+    background:url("../phone_images/arr.png") 0 -70px no-repeat;
+    position: absolute;
+    top: 138px;
+    right: -160px;
+
+}
+#left{
+    width: 70px;
+    height: 70px;
+    background:url("../phone_images/arr.png") no-repeat;
+    position: absolute;
+    top: 138px;
+    left: -160px;
+}
+.zll_box2 .down{
+    width: 65px;
+    height: 49px;
+    background: url("../phone_images/downtip.png") no-repeat;
+    position: absolute;
+    bottom: 150px;
+    left: 860px;
+}
+.zll_box3{
+    width: 100%;
+    height: 1050px;
+    background: url("../phone_images/bg3.jpg") center top no-repeat;
+    position: relative;
+}
+.zll_box3 img{
+    width: 490px;
+    height: 400px;
+    position: absolute;
+    display: none;
+}
+.zll_box3 .cfbj{
+    left: 10px;
+    top: 50px;
+}
+.zll_box3 .wgm{
+    left: 10px;
+    bottom: 50px;
+}
+.zll_box3 .jlg{
+    right: 10px;
+    bottom: 50px;
+}
+.zll_box3 .yhg{
+    right: 10px;
+    top: 50px;
+}
+.zll_box3 .end{
+    height: 600px;
+    width:650px;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+    display: none;
+}
+.zll_box3 .end p{
+    font:600 50px 微软雅黑;
+    color:#ffffff;
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+.zll_box3 .end .jyzj{
+    font:700 90px 雅黑;
+    color:gold;
+    opacity: 1;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "yarn-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "timers-browserify": "^2.0.2",
+    "webpack": "^2.2.1"
+  }
+}

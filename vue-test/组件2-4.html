@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>vue.js</title>
+	<link rel="stylesheet" href="./file/bootstrap.css">
+	<script src="./file/vue.min.js"></script>
+</head>
+<body>
+	<div id="app1">
+	<!-- 传递字符串 -->
+		<comp some-prop="1"></comp>
+		<!-- 传递数字  -->
+		<comp :some-prop="1"></comp>
+	</div>
+</body>
+
+<script>
+	Vue.component('comp',{
+		props:['someProp'],
+		template:'<span>{{someProp+1}}</span>'
+	});
+	var vm=new Vue({
+		el:'#app1'
+	})
+</script>
+</html>

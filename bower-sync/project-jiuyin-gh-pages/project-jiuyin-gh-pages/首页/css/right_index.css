@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+/*第三页开始*/
+.page3{
+    width: 100%;
+    height: 1164px;
+    border: 1px solid white;
+    margin:0 auto;
+    margin-top: -24px;
+    background: url("../right_images/guide-bg3.jpg") no-repeat center top;
+}
+
+/*第三页头部*/
+.page3 .page3-tab{
+     width: 405px;
+     height: 37px;
+     margin: 0 auto;
+     margin-top: 50px;
+    position: relative;
+}
+.page3 .page3-tab .line{
+    position: absolute;
+    top:27px;
+    left:0px;
+    width:115px;
+    height: 6px;
+    background: url("../right_images/page3-tabbg.png") no-repeat center bottom;
+}
+.page3 .page3-tab div{
+    width: 115px;
+    height: 30px;
+    float: left;
+    font-size: 22px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 20px;
+    text-align: center;
+}
+.page3 .page3-tab .p1{
+    /*margin-left: 0px;*/
+}
+/*中间小图片部分*/
+.page3-detail .small{
+    width: 1200px;
+    height:230px;
+    margin-left: 70px;
+}
+.page3-detail .small a{
+    float: left;
+    margin-left: 10px;
+    width: 140px;
+    height: 243px;
+}
+
+
+/*中间部分的底部*/
+.page3 .btns{
+    margin-top: 70px;
+    margin-left: 160px;
+}
+.page3 .btns .btn1{
+    width: 260px;
+    height: 100px;
+    background: url("../right_images/download-game.png");
+    float: left;
+    margin-right: 10px;
+}
+.page3 .btns .btn2{
+    width: 500px;
+    height: 100px;
+    background: url("../right_images/guide-btn2.png");
+    float: left;
+    margin-right: 10px;
+}
+.page3 .btns .btn3{
+    width: 260px;
+    height: 100px;
+    background: url("../right_images/quick-signin.png");
+    float: left;
+    margin-right: 10px;
+}

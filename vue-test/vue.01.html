@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+</head>
+<body>
+<div id="app">
+    <form>
+        <div class="error" v-show="!message">
+            you must enter message
+        </div>
+        <textarea v-model="message"></textarea>
+        <button v-show="message">Send message</button>
+    </form>
+</div>
+<script src="file/vue.min.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            message:""
+        }
+    })
+</script>
+</body>
+</html>

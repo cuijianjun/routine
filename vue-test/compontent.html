@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <counter heading="likes" color="green"></counter>
+        <counter heading="dislike" color="red"></counter>
+    </div>
+</div>
+<template id="counter-template">
+ <div class="container">
+    <div class="page-header">
+        <h1>{{heading}}</h1>
+        <button @click="count+=1" class="btn" style="background :{{color}}">{{count}}</button>
+    </div>
+</div>
+
+
+</template>
+<script src="./file/vue.min.js"></script>
+<script>
+    Vue.component("counter",{
+        template:"#counter-template",
+        props:["heading","color"],
+        data:function(){
+            return {count:0};
+        }
+    });
+    new Vue({
+        el:"#app"
+    })
+</script>
+</body>
+
+</html>

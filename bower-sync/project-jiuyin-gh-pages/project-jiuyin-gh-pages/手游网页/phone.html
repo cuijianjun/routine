@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/phone.css"/>
+    <title></title>
+</head>
+<body>
+<div>
+
+    <div class="zll-bg">
+        <div class="erweima">
+            <img src="phone_images/dl_ewm.jpg" alt=""/>
+            <img src="phone_images/dl_1.png" alt=""/>
+            <img src="phone_images/dl_2.png" alt=""/>
+            <img src="phone_images/ewm_btn.png" alt=""/>
+        </div>
+        <!--头部导航-->
+        <div class="zll_top">
+            <!--头部导航栏-->
+            <div class="topnav">
+                <!--头部LOGO-->
+                <a href="#"><img src="phone_images/jz.png" class="logo"/></a>
+                <!--头部文字导航栏-->
+                <ul>
+                    <li><a href="../index.html">首页<br/>HOME</a></li>
+                    <li><a href="#">新闻资讯<br/>NEWS</a></li>
+                    <li><a href="#">游戏资料<br/>PHOTO</a></li>
+                    <li><a href="#">游戏论坛<br/>BBS</a></li>
+                </ul>
+                <!--头部图标栏-->
+                <div class="navicon">
+                    <span class="icon1"></span>
+                    <span class="icon2"></span>
+                    <span class="icon3"></span>
+                    <span class="icon4"></span>
+                </div>
+            </div>
+        </div>
+        <!--固定背景-->
+        <div class="zll_box0"></div>
+        <!--第一部分-->
+        <div class="zll_box1">
+            <img src="phone_images/slogen.png" class="slogen"/>
+            <img src="phone_images/note.png" class="note"/>
+            <img src="phone_images/gumupai.png" class="gumu"/>
+        </div>
+        <!--第二部分-->
+        <div class="zll_box2">
+            <ul class="bg">
+                <li><img src="phone_images/dc86e11ee44f1e4dbf4b8b153b33a0b7.jpg" alt=""/>
+
+                    <h1>画质细腻 光影真实</h1>
+                </li>
+                <li><img src="phone_images/f78285ee0e8f3203b0cd8fd065d381cd.jpg" alt=""/>
+
+                    <h1>千人同屏 热血团战</h1>
+                </li>
+                <li><img src="phone_images/11a79bd61aea95bb59d92a663df1a1ae.jpg" alt=""/>
+
+                    <h1>超大地图 物理碰撞</h1>
+                </li>
+                <li><img src="phone_images/c9f6a34a88c9788e5bcd51ffe8cfbb1d.jpg" alt=""/>
+
+                    <h1>诡秘江湖 侠客助阵</h1>
+                </li>
+                <li><img src="phone_images/dc86e11ee44f1e4dbf4b8b153b33a0b7.jpg" alt=""/>
+
+                    <h1>画质细腻 光影真实</h1>
+                </li>
+            </ul>
+            <div class="phone">
+                <div class="screen">
+                    <ul>
+                        <li><img src="phone_images/8d0d5ca9353a6e4590cafed8661b45d9.jpg" alt=""/></li>
+                        <li><img src="phone_images/ca182b15e636c21eadc843093a3405b4.jpg" alt=""/></li>
+                        <li><img src="phone_images/b9c350a2b8f2c1949152bf2dfca3e673.jpg" alt=""/></li>
+                        <li><img src="phone_images/0f83e28ab41ac095338c47e9ccf2a62a.jpg" alt=""/></li>
+                        <li><img src="phone_images/8d0d5ca9353a6e4590cafed8661b45d9.jpg" alt=""/></li>
+                    </ul>
+                </div>
+                <div class="arr">
+                    <span id="right"></span>
+                    <span id="left"></span>
+                </div>
+            </div>
+            <div class="down"></div>
+        </div>
+        <!--第三部分-->
+        <div class="zll_box3">
+            <img src="phone_images/changfengbiaoju.png" class="cfbj"/>
+            <img src="phone_images/wugenmen.png " class="wgm"/>
+            <img src="phone_images/jilegu.png" class="jlg"/>
+            <img src="phone_images/yihuagong.png" class="yhg"/>
+            <div class="end">
+                <p>九组群侠共度光阴</p>
+                <p>真情实意满腹纶经</p>
+                <p>我们的</p>
+                <p class="jyzj">九 阴 真 经</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    //    背景图片切换
+    $(function () {
+        var i = 0;
+        $("#right").click(function () {
+            if (i == $(".bg>li").length - 1) {
+                $(".zll_box2 .bg").css("left", "0px");
+                i = 0;
+            }
+            i++;
+            $(".zll_box2 .bg").stop().animate({"left": -i * 1821 + "px"}, 500)
+        })
+        $("#left").click(function () {
+            if (i == 0) {
+                $(".zll_box2 .bg").css("left", -($(".bg>li").length - 1) * 1821 + "px");
+                i = $(".bg>li").length - 1;
+            }
+            i--;
+            $(".zll_box2 .bg").stop().animate({"left": -i * 1821 + "px"}, 500)
+        })
+    })
+    //    手机屏幕图片切换
+    $(function () {
+        var i = 0;
+        $("#right").click(function () {
+            if (i > 3) {
+                $(".screen>ul").css("left", "0px");
+                i = 0;
+            }
+            i++;
+            $(".screen>ul").stop().animate({"left": -i * 535 + "px"}, 500)
+        })
+        $("#left").click(function () {
+            if (i < 1) {
+                $(".screen>ul").css("left", -4 * 535 + "px");
+                i = 4;
+            }
+            i--;
+            $(".screen>ul").stop().animate({"left": -i * 535 + "px"}, 500)
+        })
+    })
+    // jquery 兼容的滚轮事件
+    $(function () {
+//        第二幕自动播放
+        var timer = null;
+        timer = setInterval(function () {
+            $("#right").click();
+        },1800);
+        $("#right,#left").mouseenter(function () {
+            clearInterval(timer);
+        })
+        $("#right,#left").mouseleave(function () {
+            timer = setInterval(function () {
+                $("#right").click();
+            },1800);
+        })
+//        滚轮移动事件
+        var h = 0;
+        $(document).on("mousewheel DOMMouseScroll", function (e) {
+            // chrome & ie
+            var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) ||
+                        // firefox
+                    (e.originalEvent.detail && (e.originalEvent.detail > 0 ? -1 : 1));
+
+            // 向上滚
+            if (delta > 0) {
+                if (h > 0) {
+                    h--;
+//                    二维码消失
+                    if(h == 0){
+                        $(".erweima").fadeOut(1300)
+                    }
+                    if(h < 2){
+                        $(".zll_box3 img").fadeOut(1000)
+                        $(".zll_box3 .end").fadeOut(1000);
+                    }
+                    $("body").stop().animate({"scrollTop": h * 1050}, 800);
+                }
+//      console.log("wheelup");
+                // 向下滚
+            } else if (delta < 0) {
+                if (h < 3) {
+                    h++;
+//                    二维码出现
+                    if(h == 1){
+                        $(".erweima").fadeIn(1300)
+                    }
+                    if(h == 2){
+                        $(".zll_box3 img").fadeIn(3000);
+                        $(".zll_box3 .end").fadeIn(3000);
+//                        $(".zll_box3 .end").animate({"opcity":"1"},5000)
+                    }
+                    $("body").stop().animate({"scrollTop": h * 1050}, 800);
+//      console.log("wheeldown");
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>

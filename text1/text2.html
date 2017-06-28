@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /*  var a='index.html';
+    reg=/(S*?)[^>]*>.*?|<.*? /;
+    console.log(reg.test(a));*/
+
+          function test2(){
+              var t=document.getElementById('test').value;
+              reg=/([^\s]+\.html)/;
+              if(reg.test(t))
+              {
+                  alert("ok");
+              }else{
+                  alert("not ok");
+              }
+          }
+</script>
+<input id ='test' size='12'><a href="javascript:test2();">take a test</a>
+
+</body>
+</html>

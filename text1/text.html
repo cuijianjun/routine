@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*var arr=[2,4,46,6,8,5,5,6,5];
+    var arr1=[];
+    console.log(arr.indexOf(5))
+    function getArr(num){
+        for(var i=0;i<arr.indexOf(num);i++){
+            arr1.push(arr[i]);
+        }
+    }
+    getArr(5)
+    console.log(arr1)
+
+
+    //3
+    var arr = [2,4,46,6,8,5,5]
+    var arr1=[];
+    var index=0;
+    function getArr(num){
+        for (var i=0;i< arr.length;i++){
+            if(arr[i]==num){
+                index=i;
+                for (var j=0;j<index;j++){
+                    arr1.push(arr[j]);
+
+                }
+                return;
+            }
+        }
+
+    }
+
+    getArr(5)
+    console.log(index);
+    console.log(arr1);
+
+
+    var arr = [2,4,46,6,8,5,5]
+    var arr1=[];
+    function getArr(num){
+        for (var i=0;i< arr.length;i++){
+            if(arr[i]==num){
+                for (var j=0;j<i;j++){
+                    arr1.push(arr[j]);
+                }
+                return;
+            }
+        }
+    }
+
+    getArr(5)
+    console.log(arr1);*/
+
+    var arr_back = [];
+    arr_prov=[];
+
+
+
+
+    if(/([^\s]+\.html)/.test(url)){
+        for(var i=0;i<data.page.length-1;i++){
+            arr_prov.push(data.page[i]);
+        }
+        for(var j=0;len=arr_prov.indexOf(url),j<len;j++){
+            arr_back.push(arr_prov[i]);
+        }
+        data.page = arr_back;
+    }else{
+
+    }
+
+
+
+    //需要修改的
+    backFunction: function f(e){
+        e.preventDefault();
+        var url = window.location.pathname.split("/");
+        url = url[url.length-1]
+        storage.getJson("hash", function(data) {
+            console.log(data.page[data.page.length-1].key);
+            console.log(url);
+            if (data.page.length == 0) {
+                mcpApp.finishActivity();
+            }else {
+                console.log(data.page[data.page.length - 1].close)
+                eval(data.page[data.page.length - 1].close);
+                close();
+                if(data.page[data.page.length-1].key!="flow.html"&&data.page[data.page.length-1].key!="lossReturn.html"){
+                    var arr_back = [];
+                    arr_prov=[];
+                    arr_url=[];
+                    /*for(var i=0;i<data.page.length-1;i++){
+                     arr_back.push(data.page[i]);
+                     }*/
+                    //修改
+                    for(var i=0;i<data.page.length-1;i++){
+                        arr_prov.push(data.page[i]);
+                        arr_url.push(data.page[i].key)
+                    }
+                    for(var j=0;len=arr_url.indexOf(url),j<len;j++){
+                        arr_back.push(arr_prov[j]);
+                    }
+                    data.page = arr_back;
+                    console.log(data.page);
+                    storage.put("hash", data, function() {})
+                }
+
+            }
+        })
+    };
+</script>
+</body>
+</html>

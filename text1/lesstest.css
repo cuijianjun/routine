@@ -1,0 +1,26 @@
+#header {
+  -moz-box-shadow: 0 0 1px #000;
+  -webkit-box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #000;
+}
+.btn {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.submit {
+  padding: 5px 10px;
+  border: 1px solid #369;
+  background: -moz-linear-gradient(top, #407fbf, #369 100%);
+  /*Moz*/
+  background: -webkit-gradient(linear, center top, center bottom, from(#407fbf), color-stop(100%, #369));
+  /*Webkit*/
+  background: -o-linear-gradient(top, #407fbf 0%, #369 100%);
+  /*Opera*/
+  background: -ms-linear-gradient(top, #407fbf 0%, #369 100%);
+  /*IE 10+*/
+  background: linear-gradient(top, #407fbf 0%, #369 100%);
+  /*W3C*/
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+}

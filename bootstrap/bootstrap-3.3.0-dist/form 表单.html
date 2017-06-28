@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Username">
+            <span class="input-group-addon">qq</span>
+        </div>
+
+        <div class="input-group input-group-sm">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+            <span class="input-group-addon">qq</span>
+        </div>
+    </div>
+
+
+<div class="container">
+    <form  method="get">
+        <div class="form-group">
+            <label for="username">用户名：</label>
+            <input type="text" name="usename" id="username" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="userpwd">密码</label>
+            <input  name="userpwd" type="password" id="userpwd" class="form-control">
+        </div>
+
+        <div class="btn-group">
+            <input type="submit" class="btn btn-success">
+            <input type="reset" class="btn btn-warning">
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h1 class="page-header">
+        内联表单
+    </h1>
+    <form class="form-inline" role="form">
+
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">@</div>
+                <input class="form-control" type="email" placeholder="Enter email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+</div>
+<div class="container">
+    <h1 class="page-header">
+        水平排列的表单
+    </h1>
+
+    <form class="form-horizontal" role="form">
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="page-header">
+        静态控件
+    </h1>
+    <form class="form-horizontalm" role="form">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">email@example.com</p>
+            </div>
+
+        </div>
+    </form>
+    <form role="form">
+        <input type="text" class="form-control" id="">
+    </form>
+</div>
+<div class="container">
+    <div class="col-xs-6 bg-info">
+        <input type="button" class="btn btn-success">
+        <button type="button" class="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./dist/js/bootstrap.min.js"></script>
+</html>

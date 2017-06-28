@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./file/bootstrap.css">
+</head>
+<body>
+    <h3>组件和  v-for</h3>
+    <div id="app">
+        <my-component v-for="item in items" :str1="item" ></my-component>
+    </div>
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+    Vue.component('my-component',{
+        template:'<div>index:{{index}},props:{{str1}},item:{{items.c}}</div>',
+        props:['str1','index'],
+        data:function(){
+            return {
+                items:{
+                    a:'1',
+                    b:'2',
+                    c:'3'
+                }
+            }
+        }
+    });
+//父组件
+    new Vue({
+        el:'#app',
+        data:{
+            items:{
+                'a':'4',
+                'b':'5',
+                'c':'6'
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,290 @@
+﻿.nyl-bottom{
+    margin-top: 10px;
+    background-color: #F0F0F0;
+}
+/*<!--��ߺ�ɫ��������-->*/
+.nyl-bottom-left{
+    height: 420px;
+    width: 200px;
+}
+/*<!--�ϲ����־���ͼ-->*/
+.nyl-bottom-left-top{
+    height: 80px;
+    background:url("../lv-images/icon.jpg") no-repeat 0 -181px;
+}
+.nyl-bottom-left-top h3{
+    color:#FFFFFF;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: ΢���ź�;
+}
+.nyl-bottom-left-top p{
+    color:#FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: ΢���ź�;
+}
+/*<!--�м��ĸ�ͼƬ-->*/
+.nyl-bottom-left-center{
+    height: 180px;
+    border:1px solid #484848;
+}
+.nyl-bottom-left-center ul li{
+    background-color: #333333;
+    float: left;
+    width: 98px;
+    height: 90px;
+    border-bottom:1px solid #484848 ;
+    border-right: 1px solid #484848;
+}
+.nyl-bottom-left-center ul li .jl{
+    /*background-color: #333333;*/
+    /*float: left;*/
+    width: 98px;
+    height: 90px;
+    border-bottom:1px solid #484848 ;
+    border-right: 1px solid #484848;
+}
+.nyl-bottom-left-center ul .one a{
+    width: 90px;
+    height: 60px;
+    background: url("../lv-images/nicon.png") no-repeat 0 -554px;
+    display: inline-block;
+}
+.nyl-bottom-left-center ul .two a{
+    width: 90px;
+    height: 60px;
+    background: url("../lv-images/nicon.png") no-repeat -101px -554px;
+    display: inline-block;
+
+}
+.nyl-bottom-left-center ul .three a{
+    width: 90px;
+    height: 60px;
+    background: url("../lv-images/nicon.png") no-repeat 0px -646px;
+    display: inline-block;
+
+}
+.nyl-bottom-left-center ul .four a{
+    width: 90px;
+    height: 60px;
+    background: url("../lv-images/nicon.png") no-repeat -101px -646px;
+    display: inline-block;
+    display: block;
+}
+/*添加背景图片*/
+.nyl-bottom-left-center ul .one b{
+    width: 99px;
+    height: 90px;
+    background: url("../lv-images/01_r5_c4.png");
+    display: inline-block;
+    /*display: none;*/
+}
+.nyl-bottom-left-center ul .two b{
+    width: 99px;
+    height: 90px;
+    background: url("../lv-images/02_r3_c3.png");
+    display: inline-block;
+    /*display: none;*/
+
+}
+.nyl-bottom-left-center ul .three b{
+    width: 99px;
+    height: 90px;
+    background: url("../lv-images/03_r2_c2.png");
+    display: inline-block;
+    /*display: none;*/
+}
+.nyl-bottom-left-center ul .four b{
+    width: 99px;
+    height: 90px;
+    background: url("../lv-images/04_r2_c2.png");
+    display: inline-block;
+    /*display: none;*/
+}
+/*�м�����*/
+.nyl-bottom-left-center p{
+    font-size: 12px;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-family: ΢���ź�;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.nyl-bottom-left-bottom{
+    background: url(../lv-images/icon.jpg) no-repeat 0 -262px;
+    height: 157px;
+    color: #999;
+    position: relative;
+    /*border-bottom:1px solid #484848 ;*/
+}
+.nyl-bottom-left-bottom p{
+    line-height: 21px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.nyl-bottom-left-bottom p{
+    line-height: 21px;
+    text-align: center;
+    padding-top: 10px;
+}
+.nyl-bottom-left-bottom a {
+    width: 182px;
+    height: 48px;
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 18px;
+    line-height: 48px;
+}
+.nyl-bottom-center{
+    width: 890px;
+    height: 420px;
+    margin-left: 29px;
+    /*background-color: red;*/
+    position: relative;
+}
+.nyl-bottom-center ul li {
+    float: left;
+    position: relative;
+    margin-left: 22px;
+    margin-bottom: 19px;
+    /*height: 200px;*/
+    /*width: 200px;*/
+}
+.nyl-bottom-center ul .imgli{
+    height: 200px;
+    width: 200px;
+}
+.nyl-bottom-center .bgc{
+
+    /*margin-left: 22px;*/
+    /*margin-bottom: 19px;*/
+
+}
+.nyl-bottom-center .bgc{
+    top: 0;
+    /*position: absolute;*/
+    z-index: 10;
+    display: none;
+    background-color:#5E5572 ;
+}
+.nyl-bottom-center .bgc p{
+     position: absolute;
+     bottom: 10px;
+     left: 60px;
+     font-size: 18px;
+     width: 100px;
+     height: 30px;
+     border-radius: 20px;
+     background-color: white;
+ }
+
+/*���½����ֲ���*/
+.nyl-bottom-center .contentli{
+    width: 423px;
+    height: 198px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    background-color: #ffffff;
+}
+/*�ϰ벿��*/
+.nyl-bottom-center .text{
+    width: 390px;
+    height: 41px;
+
+}
+.nyl-bottom-center .text .thead{
+    padding: 27px 4px;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+.nyl-bottom-center  .text .thead{
+    padding: 24px 4px;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+.nyl-bottom-center .text .thead li a{
+    /*line-height: 24px;*/
+}
+.nyl-bottom-center  .text .thead .current{
+    font-weight: bold;
+    border-bottom: 2px solid #5E5572;
+    color: #5E5572;
+}
+.nyl-bottom-center  .text .thead a{
+    font-size: 18px;
+    color: #91877D;
+    font-family: ΢���ź�;
+}
+/*�°벿��*/
+.nyl-bottom-center .meac-content{
+    width: 390px;
+    height:134px;
+}
+.nyl-bottom-center .meac-content ul{
+    /*width: 390px;*/
+    /*height:134px;*/
+    background-color: #ffffff;
+}
+.nyl-bottom-center .meac-content ul li{
+
+    float: left;
+    width: 370px;
+    border-bottom: 1px dashed #EDEDED;
+}
+.nyl-bottom-center .meac-content ul li a{
+   font-size: 14px;
+    color: #666666;
+    font-family: ΢���ź�;
+    line-height: 17px;
+}
+.nyl-bottom-center .meac-content ul{
+    display: none;
+}
+.nyl-bottom-center .meac-content .current{
+    display: block;
+}
+/*���½�С�ֲ�ͼ*/
+.nyl-bottom-right{
+    width: 200px;
+    height: 200px;
+    /*background-color:red;*/
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.nyl-bottom-right p{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5E5572;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.nyl-bottom-right .lb{
+    width: 210px;
+    height: 125px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.nyl-bottom-right #lb_photos{
+    width: 200px;
+    height: 300px;
+    /*margin: 0 20px;*/
+    position: relative;
+}
+.nyl-bottom-right #lb_photos img{
+    width: 94px;
+    height: 26px;
+    margin-bottom:2px;
+    border:1px solid #CCCCCC;
+}
+
+
+

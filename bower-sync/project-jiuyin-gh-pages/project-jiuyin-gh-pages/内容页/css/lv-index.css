@@ -1,0 +1,163 @@
+﻿/*商城部分*/
+
+.lv-shop-activity-main {
+    margin-top: 30px;
+}
+
+/*左边*/
+.lv-shop-activity-left {
+    width: 200px;
+
+}
+
+#lv-shop-activity-left-2, #lv-shop-activity-left-3, #lv-shop-activity-left-4 {
+    margin-top: 16px;
+}
+
+/*中间*/
+.lv-shop-activity-center {
+    background: url(../lv-images/hdbg.jpg) no-repeat 0 0;
+    width: 890px;
+    height: 400px;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+.lv-shop-activity-center-hd-tab {
+    width: 850px;
+    height: 50px;
+    margin-left: 20px;
+
+}
+
+/*tab第一行*/
+.lv-shop-activity-center-hd-tab-first {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #CDC8C4;
+    position: absolute;
+    z-index: 5;
+}
+
+.lv-shop-activity-center-hd-tab-first li {
+    float: left;
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.lv-shop-activity-center-hd-tab-first li a {
+    width: 100px;
+    display: inline-block;
+    color: #CDC8C4;
+}
+
+.lv-shop-activity-center-hd-tab-first .active {
+    font-weight: 900;
+    border-bottom: 2px solid #5E5572;
+}
+
+.lv-shop-activity-center-hd-tab-first .active a {
+    color: #5E5572;
+}
+
+/*tab第二行*/
+.lv-shop-activity-center-hd-tab-second-main {
+
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+}
+
+.lv-shop-activity-center-hd-tab-second-main ul {
+    height: 50px;
+
+}
+
+.lv-shop-activity-center-hd-tab-second-main li {
+    float: left;
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+
+.lv-shop-activity-center-hd-tab-second-main li a {
+    display: inline-block;
+    color: #CDC8C4;
+    margin-top: 20px;
+}
+
+.lv-shop-activity-center-hd-tab-second-main .current a {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+/*内容*/
+
+.lv-shop-activity-center {
+    position: relative;
+}
+
+.lv-shop-activity-center .pai-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.lv-shop-activity-center .hd-lword {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 223px;
+    line-height: 25px;
+
+}
+
+.lv-shop-activity-center .hd-lword .light {
+    color: #CDC8C4;
+}
+
+.lv-shop-activity-center .hd-intro {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    line-height: 25px;
+}
+
+.lv-shop-activity-center .main-man {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*各门派*/
+
+.lv-shop-activity-center-hd-tab-first-content .current {
+    display: none;
+}
+
+/*右边*/
+.lv-shop-activity-right {
+    width: 200px;
+    height: 615px;
+    background-color: #E6E7E9;
+}
+
+.lv-shop-activity-right {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 615px;
+    margin: 0 auto;
+
+}
+
+.lv-shop-activity-right ul {
+    position: absolute;
+    width:400px;
+    left:0;
+    top:0;
+}

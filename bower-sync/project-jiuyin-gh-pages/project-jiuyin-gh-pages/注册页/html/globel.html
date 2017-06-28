@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/content.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+    <link rel="stylesheet" href="../css/globle.css"/>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/content.js"></script>
+    <script src="../js/common.js"></script>
+    <!--<script src="../js/head.js"></script>-->
+
+</head>
+<body>
+<!--头部栏部分-->
+<div class="globle_header">
+        <!--头部居中盒子-->
+        <div class="globlebox">
+            <!--头部蜗牛游戏LOGO-->
+            <a href="#" class="woniulogo"></a>
+            <!--头部游戏广告-->
+            <a href="#" class="gamelogo" id="gameLogo">
+                <!--头部游戏广告弹出-->
+                <a class="linkimg" id="linkImg"></a>
+            </a>
+            <!--头部导航部分-->
+            <ul id="navSkip">
+                <li><a href="#" class="bbsDiv1">注册</a></li>
+                <li><a href="#" class="bbsDiv1">登录</a></li>
+                <li><a href="#" class="bbsDiv1">充值</a></li>
+                <li><a href="#" class="bbsDiv1">商城</a></li>
+                <li><a href="#" class="bbsDiv1">论坛 ▼</a>
+                    <!--论坛栏弹出部分-->
+                    <div id="bbsDiv">
+                        <dl>
+                            <dt>大型游戏</dt>
+                            <dd>九阴真经</dd>
+                            <dd>九阳神功</dd>
+                            <dd>黑金</dd>
+                            <dd>音乐侠</dd>
+                            <dd>航海世纪</dd>
+                            <dd>天子</dd>
+                            <dd>舞街区</dd>
+                            <dd>机甲世界怀旧版</dd>
+                        </dl>
+                        <dl>
+                            <dt>手机游戏</dt>
+                            <dd>天堂2</dd>
+                            <dd>九阴真经3D</dd>
+                            <dd>九阴</dd>
+                            <dd>九阴真经决战光明顶</dd>
+                            <dd>太极熊猫</dd>
+                            <dd>太极熊猫2</dd>
+                            <dd>九阳神功</dd>
+                            <dd>樱花三国</dd>
+                            <dd>横行冒险王</dd>
+                        </dl>
+                        <dl>
+                            <dt></dt>
+                            <dd>关云长</dd>
+                            <dd>天子</dd>
+                            <dd>神龙部落2</dd>
+                            <dd>占塔英雄</dd>
+                            <dd>魔法呆呆碰</dd>
+                            <dd>心之城堡</dd>
+                            <dd>让麻将飞</dd>
+                            <dd>龙战</dd>
+                            <dd>仙之痕</dd>
+                            <dd>英雄之城</dd>
+                        </dl>
+                        <dl>
+                            <dt>网页游戏</dt>
+                            <dd>大三国志</dd>
+                            <dd>文明帝国</dd>
+                            <dd>大武侠志</dd>
+                            <dd>X幻想</dd>
+                            <dd>英雄之城</dd>
+                            <dd>大航海志</dd>
+                        </dl>
+
+                    </div></li>
+                <li><a href="#" class="bbsDiv1">服务 ▼</a>
+                    <!--服务栏弹出部分-->
+                    <div id="serviceDiv">
+                        <dl>
+                            <dt>账户安全</dt>
+                            <dd>游戏激活</dd>
+                            <dd>修改邮箱</dd>
+                            <dd>资料填补</dd>
+                            <dd>防沉迷系统</dd>
+                            <dd>密码找回</dd>
+                            <dd>动态口令卡</dd>
+                            <dd>手机绑定</dd>
+                            <dd>账号解锁</dd>
+                        </dl>
+                        <dl>
+                            <dt>蜗牛商城</dt>
+                            <dd>九阴真经</dd>
+                            <dd>航海世纪</dd>
+                            <dd>机甲世纪</dd>
+                            <dd>舞街区</dd>
+                        </dl>
+                        <dl>
+                            <dt>客服中心</dt>
+                            <dd>常见问题</dd>
+                            <dd>游戏自助服务</dd>
+                            <dd>在线提交问题</dd>
+                            <dd>服务向导</dd>
+                        </dl>
+                        <dl>
+                            <dt>账户充值</dt>
+                            <dd>游戏充值</dd>
+                            <dd>账户余额</dd>
+                            <dd>充值记录</dd>
+                            <dd>卡信息查询</dd>
+                        </dl>
+
+                    </div></li>
+                <li><a href="#" class="bbsDiv1"><i></i> 蜗牛游戏 ▼</a>
+                    <!--游戏栏弹出部分-->
+                    <div class="wn-gamehead-navlayer wn-gamehead-gamelayer">
+                        <div class="wn-gamehead-hotgame">
+                            <div class="wn-gamehead-hotgametitle">热门游戏</div>
+                            <div class="wn-gamehead-clearfix">
+                                <a title="九阴真经" class="wn-gamehead-hotgameli" href="http://9yin.woniu.com" target="_blank">
+                                    <img src="../image/cjjXT1.png" alt="九阴真经" >
+                                    九阴真经
+                                </a>
+                                <a title="天堂2手游" class="wn-gamehead-hotgameli"  target="_blank">
+                                    <img src="../image/cjjXT2.png" alt="天堂2手游" >
+                                    天堂2手游
+                                </a>
+                                <a title="九阴真经3D" class="wn-gamehead-hotgameli"  target="_blank">
+                                    <img alt="九阴真经3D" src="../image/cjjXT3.png">
+                                    九阴真经3D
+                                </a>
+                                <a title="九阴" class="wn-gamehead-hotgameli" target="_blank">
+                                    <img alt="九阴"  src="../image/cjjXT4.png">
+                                    九阴
+                                </a>
+                                <a title="太极熊猫" class="wn-gamehead-hotgameli" target="_blank">
+                                    <img alt="太极熊猫" src="../image/cjjXT5.png">
+                                    太极熊猫
+                                </a>
+                                <a title="九阴真经2" class="wn-gamehead-hotgameli" target="_blank">
+                                    <img alt="九阴真经2" src="../image/cjjXT6.png">
+                                    九阴真经2
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wn-gamehead-clearfix">
+                            <dl>
+                                <dt>大型网游</dt>
+                                <dd>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="九阴真经" href="http://9yin.woniu.com" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            九阴真经
+                                        </a>
+                                        <a title="九阴真经2" href="http://9yin2.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阴真经2
+                                        </a>
+                                        <a title="九阳神功" href="http://9yang.woniu.com/main.html" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阳神功
+                                        </a>
+                                        <a title="黑金" href="http://hj.woniu.com/" target="_blank">
+                                            <em></em>
+                                            黑金
+                                        </a>
+                                        <a title="音乐侠" href="http://mm.woniu.com/" target="_blank">
+                                            <em></em>
+                                            音乐侠
+                                        </a>
+                                        <a title="天子" href="http://tz.woniu.com/" target="_blank">
+                                            <em></em>
+                                            天子
+                                        </a>
+                                        <a title="舞街区" href="http://5jq.woniu.com/" target="_blank">
+                                            <em></em>
+                                            舞街区
+                                        </a>
+                                        <a title="航海世纪" href="http://vc.woniu.com/" target="_blank">
+                                            <em></em>
+                                            航海世纪
+                                        </a>
+                                        <a title="机甲世纪" href="http://aoa.woniu.com/" target="_blank">
+                                            <em></em>
+                                            机甲世纪
+                                        </a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>手机游戏</dt>
+                                <dd>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="天堂2" href="http://tt2.woniu.com/" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            天堂2
+                                        </a>
+                                        <a title="九阴真经3D" href="http://jy3d.woniu.com" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阴真经3D
+                                        </a>
+                                        <a title="九阴" href="http://9yinsy.woniu.com/" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            九阴
+                                        </a>
+                                        <a title="九阴真经<br>决战光明顶" href="http://jz.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阴真经
+                                            <br>
+                                            决战光明顶
+                                        </a>
+                                        <a title="魔龙世界" href="http://ml.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            魔龙世界
+                                        </a>
+                                        <a title="九阳神功起源" href="http://9yangqy.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阳神功起源
+                                        </a>
+                                        <a title="天子" href="http://tzsy.woniu.com" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            天子
+                                        </a>
+                                        <a title="九阳神功生死决" href="http://9yangsy.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阳神功生死决
+                                        </a>
+                                        <a title="横行冒险王" href="http://ss.woniu.com" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            横行冒险王
+                                        </a>
+                                        <a title="魔法呆呆碰" href="http://ddp.woniu.com/" target="_blank">
+                                            <em></em>
+                                            魔法呆呆碰
+                                        </a>
+                                        <a title="让麻将飞" href="http://mj.woniu.com/" target="_blank">
+                                            <em></em>
+                                            让麻将飞
+                                        </a>
+                                        <a title="龙战" href="http://lz.woniu.com/" target="_blank">
+                                            <em></em>
+                                            龙战
+                                        </a>
+                                        <a title="音乐侠谭维维" href="http://yyx.woniu.com/" target="_blank">
+                                            <em></em>
+                                            音乐侠谭维维
+                                        </a>
+                                    </div>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="太极熊猫2" href="http://panda2.woniu.com/" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            太极熊猫2
+                                        </a>
+                                        <a title="太极熊猫" href="http://panda.woniu.com/" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            太极熊猫
+                                        </a>
+                                        <a title="关云长" href="http://gyc.woniu.com/" target="_blank">
+                                            <i class="hot"></i>
+                                            <em></em>
+                                            关云长
+                                        </a>
+                                        <a title="樱花三国" href="http://yh.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            樱花三国
+                                        </a>
+                                        <a title="神龙部落2" href="http://dragon.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            神龙部落2
+                                        </a>
+                                        <a title="心之城堡" href="http://heart.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            心之城堡
+                                        </a>
+                                        <a title="战塔英雄" href="http://zt.woniu.com/" target="_blank">
+                                            <em></em>
+                                            战塔英雄
+                                        </a>
+                                        <a title="仙之痕" href="http://xzh.woniu.com/" target="_blank">
+                                            <em></em>
+                                            仙之痕
+                                        </a>
+                                        <a title="英雄之城2" href="http://hero2.woniu.com/" target="_blank">
+                                            <em></em>
+                                            英雄之城2
+                                        </a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>电视游戏</dt>
+                                <dd>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="九阳神功" href="http://9yang.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阳神功
+                                        </a>
+                                        <a title="九阴真经" href="http://9yindp.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            九阴真经
+                                        </a>
+                                        <a title="太极熊猫" href="http://panda4k.woniu.com/" target="_blank">
+                                            <i class="new"></i>
+                                            <em></em>
+                                            太极熊猫
+                                        </a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>网页游戏</dt>
+                                <dd>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="帝国文明" href="http://dg.woniu.com/" target="_blank">
+                                            <em></em>
+                                            帝国文明
+                                        </a>
+                                        <a title="X幻想" href="http://x.woniu.com/" target="_blank">
+                                            <em></em>
+                                            X幻想
+                                        </a>
+                                        <a title="大武侠志" href="http://dwx.woniu.com/" target="_blank">
+                                            <em></em>
+                                            大武侠志
+                                        </a>
+                                        <a title="大三国志" href="http://dsg.woniu.com/" target="_blank">
+                                            <em></em>
+                                            大三国志
+                                        </a>
+                                        <a title="大航海志" href="http://dhh.woniu.com/" target="_blank">
+                                            <em></em>
+                                            大航海志
+                                        </a>
+                                        <a title="英雄之城" href="http://hero.woniu.com/" target="_blank">
+                                            <em></em>
+                                            英雄之城
+                                        </a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="wn-gamehead-gametool">
+                                <dt>游戏辅助工具</dt>
+                                <dd>
+                                    <div class="wn-gamehead-navlayer-list" style="height: 394px;">
+                                        <a title="掌上蜗牛"  target="_blank">掌上蜗牛</a>
+                                        <a title="九阴手游助手"  target="_blank">九阴手游助手</a>
+                                        <a title="九阴助手"  target="_blank">九阴助手</a>
+                                        <a title="蜗牛盾" href="http://app.woniu.com/niudun/" target="_blank">蜗牛盾</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="wn-gamehead-navlayermask" style="width: 810px; height: 549px;"></div>
+                </li>
+                <li><a href="#" class="bbsDiv1">蜗牛移动 ▼</a>
+                    <!--移动栏弹出部分-->
+                    <div id="zlmobile">
+                        <dl>
+                            <dt>游戏手机</dt>
+                            <dd>W3D</dd>
+                            <dd>78点P01</dd>
+                        </dl>
+                        <dl>
+                            <dt>免卡(SIM卡)</dt>
+                            <dd>50游戏免卡2</dd>
+                            <dd>30免卡</dd>
+                            <dd>30如意免卡</dd>
+                            <dd>60免卡</dd>
+                        </dl>
+                        <dl>
+                            <dt>游戏主机</dt>
+                            <dd>OBOX</dd>
+                        </dl>
+                        <dl>
+                            <dt>游戏超市</dt>
+                            <dd>免商店</dd>
+                        </dl>
+
+                    </div></li>
+            </ul>
+        </div> </div>
+<!-- 内容页开始 -->
+<div class="wrapper">
+    <!--<img src="../image/cjjBgImg.jpg" alt=""/>-->
+
+    <div class="content">
+        <div class="registerBox">
+            <div class="registered">如果您已经注册蜗牛其它产品“通行证”，请直接<a href="#" class="toLogin">登录 &raquo;</a></div>
+            <div class="regForm">
+                <div id="selfhoodForm">
+                   <!--第一栏：创建账号-->
+                    <div class="row">
+                    <label class="label" for="username">创建帐号：</label>
+                    <div class="collection">
+                        <!--<input type="text" id="username" name="username" class="disableIme inputDefault"/>-->
+                        <input class="msgContainer" type="text" id="username" placeholder="6-25位字母数字或下划线组成"/>
+                    </div>
+                        <div class="icon"></div>
+                </div>
+                   <!--第二栏：设置密码-->
+                    <div class="row">
+                        <label class="label" for="password">设置密码：</label>
+                        <div class="collection">
+                           <!--<input type="password" id="password" name="password" class="disableIme inputDefault"/>-->
+                            <input class="msgContainer"  id="password" placeholder="6-20个字符组成"/>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <!--第三栏：确认密码-->
+                    <div class="row">
+                        <label class="label" for="confirmPassword">确认密码：</label>
+
+                        <div class="collection">
+                          <!--<input type="password" id="confirmPassword" name="confirmPassword"&ndash;&gt;-->
+                                   <!--&lt;!&ndash;class="disableIme inputDefault" maxlength="20" tabindex="3"/>-->
+                            <input class="msgContainer " type="text" placeholder="确认密码" id="confirmPassword"/>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <!--第四栏：真实姓名-->
+                    <div class="row">
+                        <label class="label" for="mobileRealname">真实姓名：</label>
+                        <div class="collection">
+                            <!--<input type="text" id="mobileRealname" name="realname" class="inputDefault"  tabindex="4" />-->
+                            <input class="msgContainer " type="text" id="mobileRealname"  placeholder="帐号归属凭证，保障帐号安全" />
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <!--第五栏：身份证号-->
+                    <div class="row">
+                        <label class="label" >身份证号：</label>
+                        <div class="collection">
+                            <!--<input type="text" id="identity" name="identity" class="disableIme inputDefault" maxlength="18" tabindex="5" />-->
+                            <input class="msgContainer " id="identity" type="text" placeholder="帐号归属凭证，保障帐号安全">
+                        </div>
+                        <div class="icon  "></div>
+                    </div>
+                    <!--第六栏：手机号码-->
+                    <div class="row">
+                        <label class="label" for="mobile">手机号码：</label>
+
+                        <div class="collection">
+                            <!--<input type="text"  name="mobile" id="mobile" class="disableIme inputDefault "-->
+                                   <!--maxlength="11" tabindex="6"/>-->
+                            <input class="msgContainer "  id="mobile"  type="text"  placeholder="可享受官方增值服务"/>
+                        </div>
+                        <div class="icon "></div>
+                    </div>
+                 <!--第七栏：验证码-->
+                    <div class="row">
+                        <label class="label" for="captcha">验证码：</label>
+                        <div class="collection" id="captchaDiv">
+                            <!--<input type="text" id="captcha" name="captcha" class="disableIme inputDefault"-->
+                                   <!--maxlength="6" tabindex="7"/>-->
+                            <input class="msgContainer captcha　" type="text" id="captcha" maxlength="4" placeholder="验证码"/>
+                        </div>
+                        <div class="captchaimg captcha">
+                            <img src="../image/captcha.jpg"  class="cptimg"/>
+                        </div>
+                        <a class="changeImg">换一张</a>
+                        <div class="icon"></div>
+                    </div>
+                    <!--第八栏：阅读细则-->
+                    <div class="row agree">
+                        <label>
+                            <input type="checkbox" checked="checked" disabled="disabled" />
+                            我已仔细阅读并接受<a target="_blank" >“蜗牛通行证协议”</a>
+                        </label>
+                    </div>
+                    <!--第九栏：立即注册-->
+                    <div class="row send">
+                        <a href="../../内容页/main.html"><input type="submit" value=""  /></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--尾部开始-->
+<div id="pub_footer">
+<div class="pub_footer_cont">
+    <dl class="nav1">
+        <dt>关于蜗牛</dt>
+            <dd><a  target="_blank">蜗牛介绍</a></dd>
+            <dd><a  target="_blank">加入蜗牛</a></dd>
+    </dl>
+    <dl class="nav2">        
+    <dt>蜗牛游戏</dt>        
+        <dd><a  target="_blank">手机游戏</a></dd>
+        <dd><a  target="_blank">客户端游戏</a></dd>
+        <dd><a  target="_blank">网页游戏</a></dd>
+    </dl>
+    <dl class="nav3">        
+    <dt>注册账户</dt>        
+        <dd><a  target="_blank">注册通行证</a></dd>
+        <dd><a  target="_blank">找回密码</a></dd>
+    </dl>        
+    <dl class="nav4">        
+    <dt>账户管理</dt>        
+        <dd><a  target="_blank">充值中心</a></dd>
+        <dd><a  target="_blank">安全中心</a></dd>
+        <dd><a  target="_blank">客服中心</a></dd>
+        <dd><a  target="_blank">VIP中心</a></dd>
+    </dl>        
+    <dl class="nav5">        
+    <dt>商务合作</dt>        
+        <dd><a  target="_blank">合作信息</a></dd>
+        <dd><a  target="_blank">合作伙伴</a></dd>
+    </dl>        
+    <dl class="nav6">        
+    <dt>客服热线</dt>        
+        <dd>游戏咨询</dd>
+        <dd><b>0512-67631800</b></dd>
+        <dd>传真号码</dd>
+        <dd><b>0512-67671231</b></dd>
+    </dl>        
+
+    <div class="copyright">        
+    <h3>蜗牛，为梦想而生！</h3>        
+    <p>© 2016 蜗牛 苏州蜗牛数字科技股份有限公司 版权所有
+        <a target="_blank"  style="display:inline;margin:0;color:#939393;height:0;background: none;text-decoration: none;">苏ICP备08012323号-1</a></p>
+    <p>        
+    <a  class="a0" title="网络文化经营单位"></a>
+    <a  class="a1" title="经营性网站备案信息"></a>
+    </p>        
+    <div style="width:300px;margin:0 auto; padding:3px 0;">               
+     <a target="_blank"  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏公网安备 32059002001007号</p></a>
+    </div>        
+    </div>        
+    </div>        
+    </div>
+
+</body>
+</html>

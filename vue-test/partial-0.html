@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./file/bootstrap.css">
+</head>
+<body>
+	<div id="app">
+		<partial name="my-partial"></partial>
+	</div>
+</body>
+<script src="./file/vue.min.js"></script>
+<script>
+new Vue({
+		el:'#app',
+		data:{
+			msg:'你好，我是崔建军'
+		}
+	})
+	Vue.partial('my-partial','<p>this is a app{{msg}}</p>')
+	
+</script>
+</html>
